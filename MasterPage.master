@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="styles.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+		<nav>
+			<ul class="fancyNav">
+			
+				<li id="about"><a href="~/Personne.aspx" runat="server">Personne</a></li>
+				<li id="services"><a href="~/Cours.aspx" runat="server">Cours</a></li>
+				<li id="contact"><a href="~/Horaire.aspx" runat="server">Horaire</a></li>
+                <li id="KA"><a href="~/Departement.aspx" runat="server">Departement</a></li>
+                <li id="KI"><a href="~/Faculte.aspx" runat="server">Faculte</a></li>
+                <li id="KU"><a href="~/Salle.aspx" runat="server">Salle</a></li>
+                <li id="KO"><a href="~/Cours_Departement.aspx" runat="server">Cours_Dep</a></li>
+                <li id="KE"><a id="A1" href="~/Congé.aspx" runat="server">Congé</a></li>
+			</ul>
+		</nav>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
